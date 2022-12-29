@@ -1,0 +1,54 @@
+.header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+
+    @media (max-width: 625px) {
+        flex-direction: column;
+        // text-align: center;
+        .content {
+            margin-top: 30px;
+        }
+    }
+
+    .info {
+        text-decoration: underline;
+    }
+
+    img {
+        padding: 50px;
+        background: radial-gradient(
+            50% 50% at 50% 50%,
+            #763cac 0%,
+            rgba(50, 15, 133, 0) 100%
+        );
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .content {
+        margin-inline-start: 20px;
+    }
+
+    .cover {
+        position: relative;
+        color: #7127ba;
+        display: inline-block;
+        margin-inline-start: 10px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url(../../assets/circel.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: -15px;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 100px;
+        }
+    }
+}

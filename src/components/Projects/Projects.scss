@@ -1,0 +1,28 @@
+.projects {
+    margin: 100px;
+    .project {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: radial-gradient(
+            50% 50% at 50% 50%,
+            #763cac 0%,
+            rgba(50, 15, 133, 0) 100%
+        );
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            // text-align: center;
+            .content {
+                margin-top: 30px;
+            }
+        }
+
+        .content {
+            width: 445px;
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
